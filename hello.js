@@ -1,5 +1,6 @@
 const express=require('express')
 const app=express()
-app.get('/',(req,res)=>{res.send("hello")})
-app.listen(process.env.PORT,()=>console.log("server started"))
+const config=require("./config")
+app.get('/',(req,res)=>{res.send(config)})
+app.listen(config.PORT,()=>console.log("server started at"+config.PORT))
 
