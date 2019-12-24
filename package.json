@@ -7,6 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "cross-env ENV=production node hello.js",
     "develop": "cross-env ENV=develop node hello.js",
+    "push": "git push",
     "add": "git add .",
     "commit": "git commit -m 'autodeploy'",
     "deploy": "npm run add && npm run commit && npm run push"
